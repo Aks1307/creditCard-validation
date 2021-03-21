@@ -4,10 +4,12 @@ import "./Form.css";
 
 function Form() {
   const { handleSubmit, handleChange, values, errors } = useForm(submit);
+
   function submit() {
     console.log("Submitted Succesfully");
-    alert("Submitted Succesfully")
+    alert("Submitted Succesfully");
   }
+
   return (
     <div class="form">
       <form noValidate>
@@ -46,29 +48,26 @@ function Form() {
         </div>
         <div class="form-grp space">
           <div class="outer-date">
-          <label>Expiary Date</label>
-          <div className="date icon-relative">
-            <input
-              name="month"
-              maxLength="2"
-              placeholder="MM"
-              type="text"
-              value={values.month}
-              onChange={handleChange}
-            />
-            <input
-              value={values.year}
-              name="year"
-              maxLength="2"
-              placeholder="YY"
-              type="text"
-              onChange={handleChange}
-            />
-          </div>
-          {/* <i class="far fa-calendar-alt"></i> */}
-
+            <label>Expiary Date</label>
+            <div className="date icon-relative">
+              <input
+                name="month"
+                maxLength="2"
+                placeholder="MM"
+                type="text"
+                value={values.month}
+                onChange={handleChange}
+              />
+              <input
+                value={values.year}
+                name="year"
+                maxLength="2"
+                placeholder="YY"
+                type="text"
+                onChange={handleChange}
+              />
+            </div>
             <small>{errors.date && <p>{errors.date}</p>}</small>
-           
           </div>
           <div className="cvv icon-relative">
             <label>CVV</label>

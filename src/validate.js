@@ -62,6 +62,7 @@ function validateCVV(creditCard, cvv) {
 
 function validateDate(month,year){
   year = "20"+year;
+  if(parseInt(month)>12 || parseInt(month)<=0) return false;
   const expiryDate = new Date(year + '-' + month + '-01');
   if (expiryDate < new Date()) {
       return false;
