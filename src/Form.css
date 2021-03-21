@@ -1,0 +1,120 @@
+
+.visa{
+    background: url("./images/visa.png");
+    width: 65px;
+    height: 50px;
+}
+.mastercard{
+    background: url("./images/mastercard.png");
+    width: 65px;
+    height: 50px;
+}
+.amex{
+    background: url("./images/americanexpress.png");
+    width: 65px;
+    height: 50px;
+}
+.discover{
+    background: url("./images/discover.png");
+    width: 65px;
+    height: 50px;
+}
+.head{
+    text-align: center;
+}
+.form{
+    margin : 0 auto;
+}
+.card-row{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+}
+
+.form label{
+    display: block;
+    color: #555555;
+    margin-bottom: 6px;
+    margin-top: 10px;
+}
+
+
+.form input{
+    padding: 13px 0 13px 10px;
+    width: 100%;
+    text-align: center;
+    border: 2px solid #dddddd;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    word-wrap: 3px;
+    outline: none;
+    color: #555555;
+}
+
+.form-grp{
+    display: flex;
+    justify-content: space-between;
+}
+.outer-date,.cvv{
+    width: 45%;
+}
+.date input{
+    width: 40%;
+}
+.date small{
+   margin-top: 48px;
+}
+.date{
+    display: flex;
+    flex-flow: row wrap;
+    align-self: flex-end;
+}
+
+.space{
+    margin-bottom: 20px;
+}
+.icon-relative{
+    position: relative;
+}
+
+.icon-relative .fas,
+.icon-relative .far{
+    position: absolute;
+    bottom: 12px;
+    left:15px;
+    font-size: 20px;
+}
+
+.form small{
+    position: absolute;
+}
+.card-no{
+    margin-top:36px;
+}
+
+.btn-submit{
+    width: 100%;
+    margin-top: 40px;
+    background: #2196f3;
+    padding: 12px;
+    text-align: center;
+    color: #f8f8f8;
+    border-radius: 5px;
+    cursor: pointer;
+}
+small{
+    color: #e74c3c;
+    font-weight: 600;
+}
+
+@media screen and (max-width:420px){
+    .form-grp{
+        flex-direction: column;
+    }
+    .cvv,.date{
+        width: 100%;
+    }
+    .cvv label{
+        margin-top: 40px;
+    }
+}
